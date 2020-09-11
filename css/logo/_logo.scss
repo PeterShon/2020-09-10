@@ -1,0 +1,21 @@
+.logo {
+   display: flex;
+   &__icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 9px;
+   }
+   &__text {
+      display: flex;
+      flex-direction: column;
+
+      font-family: 'Raleway';
+      color: #ffffff;
+   }
+   &__title {
+      font-weight: 400;   
+   }
+   &__subtitle {
+      font-weight: 900;
+   }
+}
