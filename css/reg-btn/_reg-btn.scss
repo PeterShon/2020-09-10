@@ -1,0 +1,20 @@
+.reg-btn {
+   flex: 0 0 auto;
+
+   background: none;
+   border: 1px solid #ffffff;
+   padding: 6px 20px;
+   border-radius: 2px;
+   outline: none;
+
+   font-weight: 400;
+   font-size: 12px;
+   color: #ffffff;
+
+   &:hover {
+      cursor: pointer;
+   }
+   &:active{
+      background-color: rgba($color: #ffffff, $alpha: 0.3);
+   }
+}
