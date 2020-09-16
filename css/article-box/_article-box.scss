@@ -1,0 +1,68 @@
+.article-box {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-sizing: border-box;
+
+   height: 100vh;
+   padding: 100px 80px;
+
+   color: #061e37;
+   font-weight: 500;
+   &__title {
+      margin: 0;
+      text-align: center;
+
+      font-weight: 600;
+      font-size: 45px;
+   }
+   &__subtitle {
+      margin: 9px 0 0 0;
+      text-align: center;
+
+      font-size: 25px;
+      color: #b0bec5;;
+   }
+   &__description {
+      margin: 15px 0 0 0;
+      width: 555px;
+      text-align: center;
+
+      font-weight: 400;
+      font-size: 15px;
+      color: #b0bec5;
+      line-height: 1.67;
+   }
+   &__main {
+      display: flex;
+      flex-direction: column;
+
+      flex: 1 1 auto;
+      width: 100%;
+      padding: 48px 0 0 0;
+   }
+   &__project-tool {
+      flex: 1 1 auto;
+   }
+   &__btn {
+      align-self: center;
+      width: 150px;
+      height: 55px;
+      background-color: #1de9b6;
+      outline: none;
+      border: none;
+
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+
+      &:hover {
+         cursor: pointer;
+         background-color: #128b6d;          
+      }
+   }
+   &__spoilers {
+      margin: 0 auto;
+      width: 50%;
+   }
+}
