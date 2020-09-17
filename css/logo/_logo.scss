@@ -16,11 +16,17 @@
    &__title {
       margin: 0;
       font-weight: 400;
-      font-size: 15px;   
+      font-size: 15px;  
+      
+      text-decoration: none;
+      color: #ffffff;
    }
    &__subtitle {
       margin: 0;
       font-weight: 900;
       font-size: 15px;
+
+      text-decoration: none;
+      color: #ffffff;
    }
 }

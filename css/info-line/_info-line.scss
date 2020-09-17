@@ -13,14 +13,24 @@
       align-self: stretch;
       align-items: center;
       flex: 0 1 37.5%;
+      min-width: 0; //slider-fix
+      &--off-center {
+         flex: 0 0 52.5%;        
+      }
    }
    &__title {
       margin: 0;
 
+      color: #ffffff;
+      font-family: 'Raleway', sans-serif;
       font-size: 55px;
       font-weight: 800;
       line-height: 1.18;
       text-transform: uppercase;
+      &--few {
+         font-weight: 600;
+         font-size: 45px;
+      }
    }
    &__txt {
       margin: 0;
@@ -28,6 +38,12 @@
       font-size: 18px;
       font-weight: 400;
       line-height: 1.94;
+      color: #ffffff;
+      font-family: 'Raleway', sans-serif;
+      &--few {
+         font-weight: 500;
+         font-size: 18px;
+      }
    }
    &__btn-wrapper {
       display: flex;
@@ -55,5 +71,8 @@
          background-color: #061e37;
          color: #ffffff;
       }
+   }
+   &__slider {
+      min-width: 0; //slider-fix
    }
 }

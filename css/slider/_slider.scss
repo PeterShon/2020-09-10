@@ -1,0 +1,70 @@
+.slider {
+   position: relative;
+   &__item-wrapper {
+      margin: 35px 0;
+   }
+   &__item {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   //фотоэлемент слева
+   &__photo-wrapper {
+      width: 60px;
+      height: 60px;
+      flex: 0 0 auto;
+
+      overflow: hidden;
+      border-radius: 50%;
+      box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15);
+   }
+   &__photo {
+      width: 100%;
+   }
+   //текстовый блок справа
+   &__text-wrapper {
+      box-sizing: border-box;
+      height: 100%;
+      flex: 1 1 auto;
+      border-radius: 5px;
+      box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15);
+      background-color: #ffffff;
+      margin-left: 50px;
+      padding: 30px 60px 30px 30px;
+   }
+   &__title {
+      color: #061e37;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Roboto";
+   }
+   &__text {
+   }
+   &__paragraph {
+      color: #78909c;
+      font-size: 15px;
+      line-height: 1.67;
+      font-weight: 400;
+      font-family: "Roboto";
+      font-style: italic;
+   }
+   //кнопки
+   & .slick-arrow {
+      position: absolute;
+      left: calc(50% + 30px); //плюс картинка и минус пол ширины
+      z-index: 10;
+      font-size: 0;
+      width: 26px;height: 17px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+   }
+   & .slick-prev {
+      top: -26px;
+      background: url(/css/slider/img/icons/arrow-up.png) 0 0 / 100% no-repeat;
+   }
+   & .slick-next {
+      background: url(/css/slider/img/icons/arrow-down.png) 0 0 / 100% no-repeat;
+   }
+}
