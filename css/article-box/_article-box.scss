@@ -65,4 +65,20 @@
       margin: 0 auto;
       width: 50%;
    }
+
+   &__slider {
+      min-width: 0; //slider-fix
+      &.slider--photo {
+         align-self: center;
+         min-width: 0;
+         width: 100%;
+         margin: 16px 0 0 0;
+      }
+      &.slider--about {
+         align-self: center;
+         min-width: 0;
+         width: 40%;
+         margin: 40px 0 0 0;
+      }
+   }
 }

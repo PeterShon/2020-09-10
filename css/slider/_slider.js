@@ -1,5 +1,5 @@
 $(document).ready(function () {
-   $('.slider').slick({
+   $('.slider--customers').slick({
       vertical: true,
       verticalSwiping: true,
       infinite: true,
@@ -10,6 +10,31 @@ $(document).ready(function () {
       focusOnSelect: true,
       autoplay: true,
       autoplaySpeed: 2000,
+   });
+   $('.slider--photo').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
+      infinite: false,
+      swipeToSlide: false,
+      draggable: false,
+      arrows: false,
+      speed: 300,
+      focusOnSelect: true,
+      variableWidth: true,
+      initialSlide: 1,
+      asNavFor: '.slider--about'
+   });
+   $('.slider--about').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      //centerMode: true,
+      swipeToSlide: false,
+      draggable: false,
+      arrows: false,
+      speed: 300,
+      initialSlide: 1,
+      asNavFor: '.slider--photo'
    });
 });
 
