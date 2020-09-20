@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   display: flex;
   flex-direction: column;
@@ -57,7 +58,17 @@
 }
 
 .wrapper__header {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.wrapper__contact {
+  align-self: center;
+  width: 100%;
+}
+
+.wrapper__footer {
+  align-self: center;
+  width: 100%;
 }
 
 .nav {
@@ -274,7 +285,7 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  height: 100vh;
+  min-height: 100vh;
   padding: 100px 80px;
   color: #061e37;
   font-weight: 500;
@@ -768,5 +779,234 @@
   max-width: 100%;
   max-height: 100%;
   position: absolute;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 50px 0 100px 0;
+  background-color: #fafafa;
+}
+
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 37.5%;
+}
+
+.contact__header {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  color: #061e37;
+}
+
+.contact__about {
+  margin: 17px 0 0 0;
+  width: 92.5%;
+  text-align: center;
+  font-size: 15px;
+  color: #061e37;
+}
+
+.contact__form-wrapper {
+  margin: 49px 0 0 0;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__text-fields {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact__text {
+  flex: 0 1 46.6%;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 20px 0 0 0;
+  border: 1px solid #061e37;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact__text::placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #061e37;
+  font-weight: 500;
+}
+
+.contact__message {
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 20px 0 0 0;
+  min-height: 150px;
+  resize: none;
+  border: 1px solid #061e37;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact__message::placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #061e37;
+  font-weight: 500;
+}
+
+.contact__footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+}
+
+.contact__sub-to-news-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact__sub-to-news {
+  display: none;
+}
+
+.contact__sub-to-news:checked + .contact__sub-to-news-box {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+  background-color: #061e37;
+}
+
+.contact__sub-to-news-box {
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #061e37;
+  border-radius: 5px;
+}
+
+.contact__sub-to-news-label {
+  padding: 0 0 0 9px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #061e37;
+}
+
+.contact__btn {
+  width: 130px;
+  height: 50px;
+  background-color: #1de9b6;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.contact__btn:hover {
+  cursor: pointer;
+  background-color: #128b6d;
+}
+
+.footer {
+  background-color: #061e37;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 96px 80px 104px 80px;
+}
+
+.footer__logo {
+  flex: 0 0 50%;
+  /*.logo__icon {
+      }
+      .logo__text {
+      }
+      .logo__title {
+      }
+      .logo__subtitle {
+      }*/
+}
+
+.footer_nav {
+  flex: 0 0 50%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer_nav .nav__btn {
+  box-sizing: border-box;
+  border-radius: 0px;
+  padding: 0 25px;
+  box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0);
+  transition: 0.4s;
+}
+
+.footer_nav .nav__btn:hover {
+  background-color: #00000000;
+  font-weight: 600;
+  box-shadow: 0px 5px 0px 0 rgba(13, 68, 126, 0.5);
+}
+
+.footer_nav .nav__btn:last-child {
+  margin-right: -25px;
+}
+
+.footer__copyright {
+  flex: 0 0 50%;
+  margin: 54px 0 0 0;
+}
+
+.footer__copy-a {
+  position: relative;
+  margin: 0 22px;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__copy-a:first-child {
+  margin-left: 0;
+}
+
+.footer__copy-a:last-child {
+  margin-right: 0;
+}
+
+.footer__copy-a:not(:last-child):after {
+  content: '●';
+  position: absolute;
+  right: -28px;
+  pointer-events: none;
+  color: white;
+}
+
+.footer__socnet {
+  flex: 0 0 50%;
+  margin: 54px 0 0 0;
+  justify-content: flex-end;
+}
+
+.footer__socnet .socnet__icon-wrapper:first-child {
+  margin-left: 0;
+}
+
+.footer__socnet .socnet__icon-wrapper:last-child {
+  margin-right: 0;
+}
+
+.footer__socnet .socnet__icon {
+  opacity: 0.4;
 }
 /*# sourceMappingURL=style.css.map */

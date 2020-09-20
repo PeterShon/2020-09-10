@@ -1,0 +1,123 @@
+.contact {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   box-sizing: border-box;
+   padding: 50px 0 100px 0;
+
+   background-color: #fafafa;;
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 37.5%;
+   }
+   &__header {
+      text-align: center;
+      font-size: 45px;
+      font-weight: 600;
+      color: #061e37;
+   }
+   &__about {
+      margin: 17px 0 0 0;
+      width: 92.5%;
+
+      text-align: center;
+      font-size: 15px;
+      color: #061e37;
+   }
+   &__form-wrapper {
+      margin: 49px 0 0 0;
+   }
+   &__form {
+      display: flex;
+      flex-direction: column;
+   }
+   &__text-fields {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+   &__text {
+      flex: 0 1 46.6%;
+      box-sizing: border-box;
+      padding: 20px;
+      margin: 20px 0 0 0;
+
+      border: 1px solid #061e37;
+      border-radius: 5px;
+
+      font-size: 14px;
+      &::placeholder {
+         font-family: 'Raleway', sans-serif;
+         font-size: 14px;
+         color: #061e37;
+         font-weight: 500;
+      }
+   }
+   &__message {
+      box-sizing: border-box;
+      padding: 20px;
+      margin: 20px 0 0 0;
+      min-height: 150px;
+      resize: none;
+
+      border: 1px solid #061e37;
+      border-radius: 5px;
+
+      font-size: 14px;
+      &::placeholder {
+         font-family: 'Raleway', sans-serif;
+         font-size: 14px;
+         color: #061e37;
+         font-weight: 500;
+      }
+   }
+   &__footer {
+      display: flex;
+      justify-content: space-between;
+
+      margin: 20px 0 0 0;
+   }
+   &__sub-to-news-wrapper {
+      display: flex;
+      align-items: center;
+   }
+   &__sub-to-news {
+      display: none;
+      &:checked+.contact__sub-to-news-box{
+         outline: 1px solid #fff;
+         outline-offset: -4px;
+         background-color: #061e37;
+      }
+   }
+   &__sub-to-news-box {
+      box-sizing: border-box;
+      width: 16px;height: 16px;
+      border: 3px solid #061e37;
+      border-radius: 5px;
+   }
+   &__sub-to-news-label {
+      padding: 0 0 0 9px;
+
+      font-weight: 500;
+      font-size: 15px;
+      color: #061e37;
+   }
+   &__btn {
+      width: 130px;height: 50px;
+      background-color: #1de9b6;
+
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+
+      border: none;
+      outline: none;
+      &:hover {
+         cursor: pointer;
+         background-color: #128b6d;          
+      }
+   }
+}
