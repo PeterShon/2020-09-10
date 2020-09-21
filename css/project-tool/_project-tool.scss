@@ -4,6 +4,12 @@
    &__cards-wrapper {
       display: flex;
       justify-content: space-between;
+      
+      opacity: 0;
+      transition: all 1.5s linear 0s;
+      &.__active{
+         opacity: 1;
+      }
    }
    &__card {
       display: flex;

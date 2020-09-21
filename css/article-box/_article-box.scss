@@ -4,11 +4,23 @@
    align-items: center;
    box-sizing: border-box;
 
-   min-height: 100vh;
    padding: 100px 80px;
 
    color: #061e37;
    font-weight: 500;
+   &__header-wrapper {
+      overflow: hidden;
+   }
+   &__header {
+      position: relative;
+      transform: translateY(+100%);
+      transition: all 0.5s linear 0s;
+      opacity: 0;
+      &.__active {
+         transform: translateY(0);
+         opacity: 1;
+      }
+   }
    &__title {
       margin: 0;
       text-align: center;

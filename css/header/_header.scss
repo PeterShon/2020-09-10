@@ -7,9 +7,6 @@
 
    background: center/cover no-repeat;
    background-image: linear-gradient(to top left, rgba(23, 164, 186, 0.9), rgba(29, 233, 182, 0.9)), url(./header/img/bg.png);
-   &__panel {
-      width: 100%;
-   }
    &__info-line {
       flex: 1 0 auto;
    }

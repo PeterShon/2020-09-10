@@ -1,8 +1,18 @@
 .wrapper {
    display: flex;
    flex-direction: column;
+   &__panel {
+      width: 100%;
+      z-index: 100;
+   }
    &__header {
       min-height: 100vh;
+   }
+   &__article-box {
+      min-height: 800px;
+      &--services {
+         min-height: 870px;
+      }
    }
    &__contact {
       align-self: center;
