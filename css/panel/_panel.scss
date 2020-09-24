@@ -7,14 +7,57 @@
    padding: 0px 80px;
    box-sizing: border-box;
 
-   //background-image: linear-gradient(to bottom, #0000005e 77%, #00000000);
+   border-bottom: 0px solid #16a07d;
    background-color: #1de9b698;
    transition-duration: 0.9s;
    &:hover {
       background-color: #16a07dd5; 
-      padding: 40px 80px 15px;   
-   }
-   &__nav {
+      padding: 20px 80px 10px;   
+      border-bottom: 3px solid #094133;
    }
 }
 
+/*MEDIA QUERIES*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+   .panel {
+      padding: 0 40px;
+   }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+   .panel {
+      padding: 0 20px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-around;
+
+      transform: translateY(-40px);
+      &__logo {
+         margin-top: 10px;
+         order: 1;
+      }
+      &__nav {
+         order: 3;
+      }
+      &__reg-btn {
+         position: absolute;
+         top: 5px;
+         right: 5px;
+         order: 2;
+         margin-left: 100px;
+      }
+   }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+}

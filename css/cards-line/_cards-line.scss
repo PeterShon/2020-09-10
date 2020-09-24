@@ -1,7 +1,7 @@
 .cards-line {
    &__wrapper {
       display: flex;
-      justify-content: stretch;
+      justify-content: center;
 
       width: 100%;
 
@@ -17,7 +17,7 @@
       justify-content: center;
 
       height: 150px;
-      width: 100%;
+      flex: 1 1 25%;
 
       text-decoration: none;
 
@@ -89,8 +89,40 @@
       font-size: 20px;
       font-weight: 900;
    }
-   &__rate {
+}
+
+/*MEDIA QUERIES*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+   .cards-line {
+      &__card {
+         justify-content: flex-start;
+      }
+      &__wrapper {
+         flex-direction: column;
+      }
+      &__icon-wrapper {
+         margin: 10px 20px;
+      }
+      &__txt-box {
+         margin-left: 10px;
+         font-weight: 900;
+      }
    }
-   &__txt {
-   }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
 }

@@ -3,10 +3,10 @@
    flex-direction: column;
    &__panel {
       width: 100%;
-      z-index: 100;
+      z-index: 50;
    }
    &__header {
-      min-height: 100vh;
+      height: 100vh;
    }
    &__article-box {
       min-height: 800px;

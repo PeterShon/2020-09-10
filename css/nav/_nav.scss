@@ -27,3 +27,40 @@
       }
    }
 }
+
+/*MEDIA QUERIES*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+   .nav {
+      &__btn {
+         padding: 15px 15px;
+      }
+   }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+   .nav {
+      flex-wrap: wrap;
+      &__btn {
+         padding: 15px 15px;
+      }
+   }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+   .nav {
+      flex-wrap: wrap;
+      &__btn {
+         font-size: 13px;
+         padding: 5px 5px;
+      }
+   }
+}

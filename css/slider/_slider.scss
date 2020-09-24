@@ -1,11 +1,13 @@
 .slider {
    position: relative;
+   display: flex;
+   align-items: center;
    &--photo .slider__item {
       width: 180px;height: 180px;
    }
    &__item-wrapper { 
       outline: none;
-      margin: 35px 0px;
+      margin: 3vh 0px;
       &--about {
          margin: 0 0;
          width: 100%;
@@ -67,7 +69,7 @@
       }
    }
    &__item {
-      height: 200px;
+      height: 22vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -100,6 +102,7 @@
    &__text-wrapper {
       box-sizing: border-box;
       height: 100%;
+      overflow: auto;
       flex: 1 1 auto;
       border-radius: 5px;
       box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15);
@@ -120,8 +123,6 @@
       font-size: 18px;
       font-weight: 600;
       font-family: "Roboto";
-   }
-   &__text {
    }
    &__paragraph {
       color: #78909c;
@@ -150,10 +151,76 @@
       outline: none;
    }
    & .slick-prev {
-      top: -26px;
+      top: -20px;
       background: url(/css/slider/img/icons/arrow-up.png) 0 0 / 100% no-repeat;
    }
    & .slick-next {
+      bottom: -20px;
       background: url(/css/slider/img/icons/arrow-down.png) 0 0 / 100% no-repeat;
    }
+}
+
+/*MEDIA QUERIES*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+   .slider {
+      &__item-wrapper { 
+         margin: 20px 0px;
+      }
+      &__item {
+         height: 33vh;
+      }
+      &__text-wrapper {
+         margin-left: 20px;
+         padding: 15px 30px 15px 15px;
+      }
+   }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+   .slider {
+      &__item {
+         height: 33vh;
+      }
+      &__text-wrapper {
+         margin-left: 20px;
+         padding: 15px 30px 15px 15px;
+      }
+   }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+   .slider {
+      &--photo .slider__item {
+         width: 100px;height: 100px;
+      }
+      &__item-wrapper--photo:not(.slick-current) .slider__photo-wrapper {
+         width: 50px;
+         height: 50px;
+      }
+      &__item-wrapper--photo.slick-current .slider__photo-wrapper--photo {
+         border: 5px solid white;
+      }
+      &__item {
+         height: 35vh;
+      }
+      &__text-wrapper {
+         margin-left: 20px;
+         padding: 15px 30px 15px 15px;
+      }
+      & .slick-prev {
+         top: -10px;
+      }
+      & .slick-next {
+         bottom: -10px;
+      }
+   }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
 }

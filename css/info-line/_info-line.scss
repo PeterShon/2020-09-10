@@ -7,12 +7,14 @@
       display: flex;
       flex-direction: column;
       flex: 0 1 37.5%;
-   };
+   }
    &__rigth-block {
+      position: relative;
       display: flex;
       align-self: stretch;
       align-items: center;
       flex: 0 1 37.5%;
+
       min-width: 0; //slider-fix
       &--off-center {
          flex: 0 0 52.5%;        
@@ -93,6 +95,146 @@
       }
    }
    &__slider {
+      height: 100%;
       min-width: 0; //slider-fix
    }
 }
+
+/*MEDIA QUERIES*/
+   /* Large desktops and laptops */
+   @media (min-width: 1500px) {
+   }
+   /* Large desktops and laptops */
+   @media (min-width: 1200px) and (max-width: 1499px) {
+      .info-line {
+         &__title {
+            font-size: 35px;
+            &--few {
+               font-size: 35px;
+            }
+         }
+         &__txt {
+            font-size: 16px;
+            &--few {
+               font-size: 16px;
+            }
+         }
+      }
+   }
+   /* Portrait tablets and medium desktops */
+   @media (min-width: 992px) and (max-width: 1199px) {
+      .info-line {
+         &__left-block {
+            flex: 0 1 45%;
+         };
+         &__rigth-block {
+            flex: 0 1 45%;
+         }
+         &__title {
+            font-size: 30px;
+            &--few {
+               font-size: 30px;
+            }
+         }
+         &__txt {
+            font-size: 14px;
+            &--few {
+               font-size: 14px;
+            }
+         }
+      }
+   }
+   /* Portrait tablets and small desktops */
+   @media (min-width: 768px) and (max-width: 991px) {
+      .info-line {
+         &__left-block {
+            flex: 0 1 36%;
+         }
+         &__rigth-block {
+            justify-content: center;
+            margin-top: 15px;
+            flex: 0 1 60%;
+            height: 100%;
+         }
+         &__title {
+            font-size: 24px;
+            &--few{
+               font-size: 24px;
+            }
+         }
+         &__txt {
+            font-size: 14px;
+            &--few{
+               font-size: 14px;
+            }
+         }
+         &__btn-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+      
+            margin-top: 10px;
+         }
+      
+         &__btn--buy-now {
+            margin-right: 0px;
+         }
+         &__btn--try-for-free {
+            margin-top: 20px;
+         }
+         &__slider {
+            height: 100%;
+         }
+      }
+   }
+   /* Landscape phones and portrait tablets */
+   @media (max-width: 767px) {
+      .info-line {
+         flex-direction: column;
+         justify-content: center;
+         &__left-block {
+            flex: 0 1 auto;
+         }
+         &__rigth-block {
+            justify-content: center;
+            margin-top: 15px;
+            flex: 0 1 50%;
+            height: 100%;
+         }
+         &__title {
+            font-size: 20px;
+            &--few{
+               font-size: 20px;
+            }
+         }
+         &__txt {
+            font-size: 14px;
+            &--few{
+               font-size: 14px;
+            }
+         }
+         &__btn-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+      
+            margin-top: 10px;
+         }
+      
+         &__btn--buy-now {
+            margin-right: 20px;
+            padding: 11px 22px;
+         }
+         &__btn--try-for-free {
+            margin-top: 0px;
+            padding: 11px 14px;
+         }
+         &__slider {
+            height: 100%;
+         }
+      }
+   }
+   /* Landscape phones and smaller */
+   @media (max-width: 480px) {
+
+   }
