@@ -14,5 +14,6 @@ Properties and technologies:
 * 1 page;
 * slider;
 * custom video;
+* scroll animation;
 * spoiler.
 
