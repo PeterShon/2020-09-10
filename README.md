@@ -17,4 +17,3 @@ Properties and technologies:
 * custom video;
 * scroll animation;
 * spoiler.
-
