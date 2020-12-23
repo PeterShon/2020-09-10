@@ -1,3 +1,3 @@
 index.html
-css/*
-source/*
+css/**/*
+source/**/*
